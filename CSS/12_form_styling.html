@@ -11,34 +11,37 @@
     />
     <style>
       * {
-        /* 
+        width: auto;
+        border-block-width: 1px;
+        padding: 10px 10px;
+        /*
         -May want to add "border-box for "box-sizing so padding does not affect width
         -Reset margin and padding 
        */
       }
 
       body {
-        /* 
-          -Background color is #344a72
-        */
+
+        background: #344a72;
+
       }
 
       a {
+        color: blue;
         /* 
         Underlined links are ugly :)
        */
       }
 
       #container {
-        /* 
-        -Remember, margin: auto on left and right will center a block element 
-        -I would also set a "max-width" for responsiveness
-        -May want to add some padding
-        */
+        margin: 30px auto
+        max-width: fit-content(10px);
+        padding: 10px 20px;
       }
 
       .form-wrap {
-        /* 
+        background: white;
+        /*
           This is the white area around the form and heading, etc
         */
       }
@@ -63,22 +66,25 @@
       }
 
       .form-wrap .form-group input {
-        /* 
-          Inputs should reach accross the .form-wrap 100% and have some padding
+
+        padding: 5px 10px;
+        /*
+          Inputs should reach across the .form-wrap 100% and have some padding
         */
       }
 
       .form-wrap button {
         /* 
-          Button should wrap accross 100% and display as block
+          Button should wrap across 100% and display as block
           Background color for button is #49c1a2
         */
+        display: block;
+        float-wrap: wrap;
+        background: #49c1a2;
       }
 
       .form-wrap button:hover {
-        /* 
-          Hover background color for button is #37a08e
-        */
+         background: #37a08e
       }
 
       .form-wrap .bottom-text {
@@ -88,15 +94,13 @@
       }
 
       footer {
-        /* 
+        /*
         Should be centered
        */
       }
 
       footer a {
-        /* 
-          Footer link color is #49c1a2
-        */
+      background: #49c1a2
       }
     </style>
   </head>
@@ -124,7 +128,7 @@
           </div>
           <div class="form-group">
             <label for="password2">Confirm Password</label>
-            <input type="password" name="pasword2" id="password2" />
+            <input type="password" name="password2" id="password2" />
           </div>
           <button type="submit" class="btn">Sign Up</button>
           <p class="bottom-text">
